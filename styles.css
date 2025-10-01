@@ -191,9 +191,6 @@ body{
   /* texto mais largo e confortável de ler */
   .about-copy{
     padding: 4px 2px 2px;
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    hyphens: auto !important;
   }
 
   /* “QUEM É” como título curto */
@@ -377,3 +374,20 @@ body{
 .footer-logo{ display:none !important; }
 
 
+/* ===== SOBRE – texto justificado ===== */
+.about p,
+.about-copy p{
+  text-align: justify;         /* alinhamento nas duas margens */
+  text-justify: inter-word;    /* distribui espaço entre palavras */
+  hyphens: auto;               /* hifenização automática quando preciso */
+}
+
+/* opcional: no mobile, mantenho justificado mas com um pouco mais de legibilidade */
+@media (max-width: 720px){
+  .about p,
+  .about-copy p{
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+}
