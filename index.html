@@ -4,161 +4,118 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dra Julia Bonette — Links Oficiais</title>
-    <meta
-      name="description"
-      content="Página de links oficial da Dra. Julia Bonette."
-    />
+    <meta name="description" content="Página de links oficial da Dra. Julia Bonette." />
 
-    <!-- Tipografias -->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Noto+Serif+Display:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- (mantive como você tinha) -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page">
-      <!-- HERO -->
-      <section class="hero container">
-        <div class="hero-card ios-glass">
-          <!-- barra instagram por cima da cabeça -->
-          <a
-            class="hero-social"
-            href="https://instagram.com/drajuliabonette"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram @drajuliabonette"
-          >
-            <!-- SVG do ícone do Instagram -->
-            <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"
-              />
-            </svg>
-            <span>@drajuliabonette</span>
-          </a>
+    <!-- Topo com IG à esquerda -->
+    <header class="topbar container">
+      <a class="ig-pill" href="https://instagram.com/drajuliabonette" target="_blank" rel="noopener" aria-label="Instagram @drajuliabonette">
+        <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"
+                />
+              </svg>
+        <span>@drajuliabonette</span>
+      </a>
+    </header>
 
-          <!-- imagem principal -->
-          <img
-            class="hero-main"
-            src="assets/Principal2_fade20.png"
-            alt="Dra Julia Bonette"
-          />
-
-          <!-- >>> NOVO: véu translúcido sobre a foto <<< -->
-          <div class="hero-overlay" aria-hidden="true"></div>
-
-          <!-- fade de base + wordmark -->
-          <div class="hero-fade" aria-hidden="true"></div>
-          <h1 class="hero-wordmark">Dra Julia Bonette</h1>
+    <main>
+      <!-- HERO: principal.png grande + título por cima (no peito) -->
+      <section class="hero">
+        <h1 class="hero-title">Dra Julia Bonette</h1>
+        <div class="container">
+          <img class="hero-img" src="assets/principal.png" alt="Dra Julia Bonette" />
         </div>
+        <div class="hero-fade" aria-hidden="true"></div>
       </section>
 
-      <!-- LINKS — informe a proporção de cada imagem -->
-      <section class="links container" aria-label="Links principais">
-        <!-- card1 -->
-        <a
-          class="link-card ios-glass"
-          data-wa="55 11 92147-9610"
-          data-msg="Olá! Quero agendar em SP/MG."
-          style="--w: 502px; --ratio: 502/460"
-        >
-          <div class="thumb-wrap">
-            <img class="card-photo" src="assets/card1.png" alt="Retrato P&B" />
+      <!-- CARDS -->
+      <section id="links" class="links container">
+        <article class="link-card glass">
+          <div class="media gradient">
+            <img src="assets/agendamento.png" alt="Agendamento" />
           </div>
-          <div class="card-copy">
-            <h3 class="card-title">AGENDAMENTO</h3>
-            <p class="card-sub">SÃO PAULO &amp; MINAS</p>
+          <div class="content">
+            <h2 class="card-title">
+              <span class="line1">AGENDAMENTO</span>
+              <span class="line2">SÃO PAULO &amp; MINAS</span>
+            </h2>
+            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
           </div>
-          <span class="arrow" aria-hidden="true">›</span>
-        </a>
+        </article>
 
-        <!-- card2 -->
-        <a
-          class="link-card ios-glass"
-          data-wa="55 11 92147-9610"
-          data-msg="Quero informações sobre o Clube da Dra Julia."
-          style="--w: 519px; --ratio: 519/461"
-        >
-          <div class="thumb-wrap">
-            <img
-              class="card-photo"
-              src="assets/card2.png"
-              alt="Clube da Dra Julia"
-            />
+        <article class="link-card glass">
+          <div class="media gradient">
+            <img src="assets/clube-dra-julia.png" alt="Clube da Dra Julia" />
           </div>
-          <div class="card-copy">
-            <h3 class="card-title">CLUBE DA</h3>
-            <p class="card-sub">DRA JULIA</p>
+          <div class="content">
+            <h2 class="card-title">
+              <span class="line1">CLUBE DA</span>
+              <span class="line2">DRA JULIA</span>
+            </h2>
+            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
           </div>
-          <span class="arrow" aria-hidden="true">›</span>
-        </a>
+        </article>
 
-        <!-- card3 -->
-        <a
-          class="link-card ios-glass"
-          data-wa="55 11 91189-1447"
-          data-msg="Tenho interesse nas mentorias Galderma."
-          style="--w: 472px; --ratio: 472/481"
-        >
-          <div class="thumb-wrap">
-            <img
-              class="card-photo"
-              src="assets/card3.png"
-              alt="Mentorias Galderma"
-            />
+        <article class="link-card glass">
+          <div class="media gradient">
+            <img src="assets/mentoria-galderma.png" alt="Mentorias Galderma" />
           </div>
-          <div class="card-copy">
-            <h3 class="card-title">MENTORIAS</h3>
-            <p class="card-sub">GALDERMA</p>
+          <div class="content">
+            <h2 class="card-title">
+              <span class="line1">MENTORIAS</span>
+              <span class="line2">GALDERMA</span>
+            </h2>
+            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
           </div>
-          <span class="arrow" aria-hidden="true">›</span>
-        </a>
+        </article>
 
-        <!-- card4 -->
-        <a
-          class="link-card ios-glass"
-          data-wa="55 11 91189-1447"
-          data-msg="Quero ser paciente modelo."
-          style="--w: 664px; --ratio: 664/502"
-        >
-          <div class="thumb-wrap">
-            <img
-              class="card-photo"
-              src="assets/card4.png"
-              alt="Paciente modelo"
-            />
+        <article class="link-card glass">
+          <div class="media gradient">
+            <img src="assets/paciente-modelo.png" alt="Paciente Modelo" />
           </div>
-          <div class="card-copy">
-            <h3 class="card-title">PACIENTE</h3>
-            <p class="card-sub">MODELO</p>
+          <div class="content">
+            <h2 class="card-title">
+              <span class="line1">PACIENTE</span>
+              <span class="line2">MODELO</span>
+            </h2>
+            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
           </div>
-          <span class="arrow" aria-hidden="true">›</span>
-        </a>
+        </article>
       </section>
 
-      <!-- SOBRE -->
-      <section id="sobre" class="about container ios-glass">
-        <div class="about-media">
-          <img src="assets/sobre.png" alt="Dra Julia sorrindo" />
-        </div>
-        <div class="about-copy">
-          <h1 class="eyebrow">QUEM É</h1>
-          <h2>Dra Julia Bonette</h2>
-          <p>
-            Mentora e especialista em HOF, dedicada à criação de resultados estéticos naturais. Com um compromisso contínuo com atualizações e aprimoramento profissional, busco constantemente oferecer conhecimentos em educação e treinamento clínico. Minha abordagem visa realçar a beleza individual de cada paciente, promovendo equilíbrio estético e funcional. Além do estudo e aprimoramento contínuo por meio da imersão em literatura científica especializada. Minha busca incessante por conhecimento visa aprofundar a compreensão das práticas e teorias fundamentais na minha área de atuação. Mantenho-me atualizada com as últimas pesquisas e avanços, incorporando ativamente esses insights aos meus métodos de trabalho. Essa abordagem fundamentada em evidências reforça minha capacidade de oferecer soluções inovadoras e eficazes, alinhadas às melhores práticas e padrões da minha especialidade. Este compromisso constante com o estudo visa não apenas a minha evolução profissional, mas também a entrega de resultados excepcionais e personalizados e de alta qualidade, visando sempre o bem-estar e satisfação dos meus pacientes, equipe e colegas de profissão.
-          </p>
+      <!-- SOBRE / QUEM É (sem card, com gradiente 90°) -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-wrap">
+            <div class="about-media">
+              <img src="assets/quem-e-julia.jpeg" alt="Dra Julia Bonette" />
+            </div>
+
+            <div class="about-copy">
+              <h2 class="about-eyebrow">QUEM É</h2>
+              <h3 class="about-title">DRA JULIA BONETTE</h3>
+
+              <p>
+                Mentora e especialista em HOF, dedicada à criação de resultados estéticos naturais. Com um compromisso contínuo com atualizações e aprimoramento profissional, busco constantemente oferecer conhecimentos em educação e treinamento clínico. Minha abordagem visa realçar a beleza individual de cada paciente, promovendo equilíbrio estético e funcional. Além do estudo e aprimoramento contínuo por meio da imersão em literatura científica especializada. Minha busca incessante por conhecimento visa aprofundar a compreensão das práticas e teorias fundamentais na minha área de atuação. Mantenho-me atualizada com as últimas pesquisas e avanços, incorporando ativamente esses insights aos meus métodos de trabalho. Essa abordagem fundamentada em evidências reforça minha capacidade de oferecer soluções inovadoras e eficazes, alinhadas às melhores práticas e padrões da minha especialidade. Este compromisso constante com o estudo visa não apenas a minha evolução profissional, mas também a entrega de resultados excepcionais e personalizados e de alta qualidade, visando sempre o bem-estar e satisfação dos meus pacientes, equipe e colegas de profissão.
+              </p>
+
+            </div>
+          </div>
         </div>
       </section>
+    </main>
 
-      <!-- FOOTER -->
+     <!-- FOOTER -->
       <footer class="site-footer">
         <div class="footer container">
           <h2 class="footer-wordmark">Dra Julia Bonette</h2>
@@ -194,7 +151,6 @@
         </div>
       </footer>
       <br />
-    </main>
 
     <script src="script.js"></script>
   </body>
