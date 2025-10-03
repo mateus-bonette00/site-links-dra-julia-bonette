@@ -9,7 +9,6 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- (mantive como você tinha) -->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
 
@@ -20,10 +19,8 @@
     <header class="topbar container">
       <a class="ig-pill" href="https://instagram.com/drajuliabonette" target="_blank" rel="noopener" aria-label="Instagram @drajuliabonette">
         <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"
-                />
-              </svg>
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"/>
+        </svg>
         <span>@drajuliabonette</span>
       </a>
     </header>
@@ -40,7 +37,12 @@
 
       <!-- CARDS -->
       <section id="links" class="links container">
-        <article class="link-card glass">
+
+        <!-- Card 1 — Agendamento (SP & MG) -->
+        <article class="link-card glass"
+                 role="link" tabindex="0"
+                 aria-label="Abrir WhatsApp - Agendamento SP e MG"
+                 data-link="https://wa.me/5511921479610?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20um%20atendimento%20para%20SP%20ou%20MG.">
           <div class="media gradient">
             <img src="assets/agendamento.png" alt="Agendamento" />
           </div>
@@ -49,11 +51,16 @@
               <span class="line1">AGENDAMENTO</span>
               <span class="line2">SÃO PAULO &amp; MINAS</span>
             </h2>
-            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://wa.me/5511921479610?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20um%20atendimento%20para%20SP%20ou%20MG.">Acessar</a>
           </div>
         </article>
 
-        <article class="link-card glass">
+        <!-- Card 2 — Clube da Dra Julia -->
+        <article class="link-card glass"
+                 role="link" tabindex="0"
+                 aria-label="Abrir WhatsApp - Clube da Dra Julia"
+                 data-link="https://wa.me/5511921479610?text=Queria%20saber%20mais%20informa%C3%A7%C3%B5es%20do%20clube%20da%20Dra%20Julia">
           <div class="media gradient">
             <img src="assets/clube-dra-julia.png" alt="Clube da Dra Julia" />
           </div>
@@ -62,11 +69,16 @@
               <span class="line1">CLUBE DA</span>
               <span class="line2">DRA JULIA</span>
             </h2>
-            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://wa.me/5511921479610?text=Queria%20saber%20mais%20informa%C3%A7%C3%B5es%20do%20clube%20da%20Dra%20Julia">Acessar</a>
           </div>
         </article>
 
-        <article class="link-card glass">
+        <!-- Card 3 — Mentorias Galderma -->
+        <article class="link-card glass"
+                 role="link" tabindex="0"
+                 aria-label="Abrir WhatsApp - Mentorias Galderma"
+                 data-link="https://wa.me/5511911891447?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20mentoria%20Galderma%21">
           <div class="media gradient">
             <img src="assets/mentoria-galderma.png" alt="Mentorias Galderma" />
           </div>
@@ -75,11 +87,16 @@
               <span class="line1">MENTORIAS</span>
               <span class="line2">GALDERMA</span>
             </h2>
-            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://wa.me/5511911891447?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20mentoria%20Galderma%21">Acessar</a>
           </div>
         </article>
 
-        <article class="link-card glass">
+        <!-- Card 4 — Paciente Modelo -->
+        <article class="link-card glass"
+                 role="link" tabindex="0"
+                 aria-label="Abrir WhatsApp - Paciente Modelo"
+                 data-link="https://wa.me/5511911891447?text=Gostaria%20de%20saber%20mais%20sobre%20Paciente%20Modelo">
           <div class="media gradient">
             <img src="assets/paciente-modelo.png" alt="Paciente Modelo" />
           </div>
@@ -88,9 +105,11 @@
               <span class="line1">PACIENTE</span>
               <span class="line2">MODELO</span>
             </h2>
-            <a class="btn" href="#" target="_blank" rel="noopener">Acessar</a>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://wa.me/5511911891447?text=Gostaria%20de%20saber%20mais%20sobre%20Paciente%20Modelo">Acessar</a>
           </div>
         </article>
+
       </section>
 
       <!-- SOBRE / QUEM É (sem card, com gradiente 90°) -->
@@ -106,51 +125,50 @@
               <h3 class="about-title">DRA JULIA BONETTE</h3>
 
               <p>
-                Mentora e especialista em HOF, dedicada à criação de resultados estéticos naturais. Com um compromisso contínuo com atualizações e aprimoramento profissional, busco constantemente oferecer conhecimentos em educação e treinamento clínico. Minha abordagem visa realçar a beleza individual de cada paciente, promovendo equilíbrio estético e funcional. Além do estudo e aprimoramento contínuo por meio da imersão em literatura científica especializada. Minha busca incessante por conhecimento visa aprofundar a compreensão das práticas e teorias fundamentais na minha área de atuação. Mantenho-me atualizada com as últimas pesquisas e avanços, incorporando ativamente esses insights aos meus métodos de trabalho. Essa abordagem fundamentada em evidências reforça minha capacidade de oferecer soluções inovadoras e eficazes, alinhadas às melhores práticas e padrões da minha especialidade. Este compromisso constante com o estudo visa não apenas a minha evolução profissional, mas também a entrega de resultados excepcionais e personalizados e de alta qualidade, visando sempre o bem-estar e satisfação dos meus pacientes, equipe e colegas de profissão.
+                Mentora e especialista em HOF, dedicada à criação de resultados estéticos naturais.
+                Com um compromisso contínuo com atualizações e aprimoramento profissional, busco
+                constantemente oferecer conhecimentos em educação e treinamento clínico. Minha abordagem
+                visa realçar a beleza individual de cada paciente, promovendo equilíbrio estético e
+                funcional. Além do estudo e aprimoramento contínuo por meio da imersão em literatura
+                científica especializada. Minha busca incessante por conhecimento visa aprofundar a
+                compreensão das práticas e teorias fundamentais na minha área de atuação. Mantenho-me
+                atualizada com as últimas pesquisas e avanços, incorporando ativamente esses insights
+                aos meus métodos de trabalho. Essa abordagem fundamentada em evidências reforça minha
+                capacidade de oferecer soluções inovadoras e eficazes, alinhadas às melhores práticas
+                e padrões da minha especialidade. Este compromisso constante com o estudo visa não
+                apenas a minha evolução profissional, mas também a entrega de resultados excepcionais
+                e personalizados e de alta qualidade, visando sempre o bem-estar e satisfação dos meus
+                pacientes, equipe e colegas de profissão.
               </p>
-
             </div>
           </div>
         </div>
       </section>
     </main>
 
-     <!-- FOOTER -->
-      <footer class="site-footer">
-        <div class="footer container">
-          <h2 class="footer-wordmark">Dra Julia Bonette</h2>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer container">
+        <h2 class="footer-wordmark">Dra Julia Bonette</h2>
 
-          <div class="footer-meta">
-            <p>© <span id="y"></span> Dra Julia Bonette</p>
-            <a
-              class="footer-ig"
-              href="https://instagram.com/drajuliabonette"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"
-                />
-              </svg>
-              <span>@drajuliabonette</span>
-            </a>
-          </div>
-          <p class="credit">
-            Desenvolvido por
-            <a
-              class="credit-link"
-              href="https://www.instagram.com/mateus_bonette/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Abrir Instagram de Mateus Bonette"
-            >
-              @mateus_bonette
-            </a>
-          </p>
+        <div class="footer-meta">
+          <p>© <span id="y"></span> Dra Julia Bonette</p>
+          <a class="footer-ig" href="https://instagram.com/drajuliabonette" target="_blank" rel="noopener">
+            <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"/>
+            </svg>
+            <span>@drajuliabonette</span>
+          </a>
         </div>
-      </footer>
-      <br />
+
+        <p class="credit">
+          Desenvolvido por
+          <a class="credit-link" href="https://www.instagram.com/mateus_bonette/" target="_blank" rel="noopener" aria-label="Abrir Instagram de Mateus Bonette">
+            @mateus_bonette
+          </a>
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
