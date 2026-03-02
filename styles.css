@@ -175,6 +175,20 @@ body::before{
   transform: scale(1.08);
 }
 
+/* Card Wedding: exibe a imagem inteira (sem corte) */
+.link-card--wedding .media img{
+  height:100%;
+  
+  transform:scale(1.10);
+}
+.link-card--wedding:hover .media img,
+.link-card--wedding:focus-within .media img,
+.link-card--wedding.is-touch .media img{
+  transform:scale(1);
+}
+
+
+
 /* Gradient 90° atrás das fotos (como você pediu) */
 .gradient{
   background: linear-gradient(90deg,#C2B0AA 0%,#C9B9AF 35%,#DED0BE 75%,#FFFFFF 100%);
@@ -204,6 +218,20 @@ body::before{
   font-weight:700;               /* bold */
   color: var(--c4);              /* #D3C1A9 */
   margin:0;
+}
+.card-title .line3{
+  display:block;
+  font-weight:700;
+  color: var(--c4);
+  margin:0;
+}
+
+/* ajuste exclusivo do card Wedding para melhor leitura dos dois nomes */
+.card-title--wedding .line2,
+.card-title--wedding .line3{
+  font-size:.8em;
+  letter-spacing:.02em;
+  line-height:1.03;
 }
 
 .ig {
